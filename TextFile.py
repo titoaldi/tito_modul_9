@@ -1,0 +1,13 @@
+file = open("data_tito.txt", "w")
+file.write(f"nama : {input('masukan nama ')}\n")
+file.write(f"umur : {input('masukan umur ')}\n")
+file.write(f"alamat : {input('masukan alamat ')}\n")
+file.write(f"email : {input('masukan email ')}\n")
+file.write(f"dosen : {input('masukan nama dosen ')}\n")
+file.close()
+file=open("data_tito.txt", "r")
+data = file.read()
+
+print("\nData yang tersimpan di file:")
+print(data)
+file.close()
